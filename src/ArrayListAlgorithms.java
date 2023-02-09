@@ -139,16 +139,16 @@ public class ArrayListAlgorithms {
         //ArrayList<Integer> mode = new ArrayList<Integer>();
         int mostCommon = 0;
         int mostCommonFrequency = 0;
-        for (int i = 0; i < num.size() - 1; i++) { //traverse through the ArrayList
+        for (int i = 0; i < num.size() - 1; i++) {
             int currentFrequency = 1;
-            for (int j = i + 1; j < num.size(); j++) { //traverse through rest of ArrayList
+            for (int j = i + 1; j < num.size(); j++) {
                 if (num.get(j) == num.get(i)) {
-                    // if any element matches current element being checked, add 1 to frequency
+
                     currentFrequency++;
                 }
             }
             if (currentFrequency > mostCommonFrequency) {
-                mostCommon = num.get(i);      // replaces current mode if new most common element
+                mostCommon = num.get(i);
                 mostCommonFrequency = currentFrequency;
             }
         }
